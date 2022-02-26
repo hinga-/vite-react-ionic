@@ -1,4 +1,3 @@
-import legacy from '@vitejs/plugin-legacy';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import { injectHtml, minifyHtml } from 'vite-plugin-html';
@@ -24,10 +23,6 @@ export default defineConfig({
           injectTo: 'head',
         },
       ],
-    }),
-    legacy({
-      targets: ['ie >= 11'],
-      additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
     }),
   ],
   css: {

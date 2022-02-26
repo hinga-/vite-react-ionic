@@ -11,18 +11,25 @@
   },
   "pre-commit": "lint",
   "dependencies": {
+    "@capacitor/android": "^3.4.1",
+    "@capacitor/cli": "^3.4.1",
+    "@capacitor/core": "^3.4.1",
+    "@capacitor/ios": "^3.4.1",
+    "@ionic/react": "^6.0.0-rc.4",
+    "@ionic/react-router": "^6.0.0-rc.4",
     "autoprefixer": "^10.4.0",
     "postcss": "^8.3.11",
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "react-router": "^5.2.1"
   },
   "devDependencies": {
     "@types/node": "^16.11.11",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.3.3",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
-    "@vitejs/plugin-legacy": "^1.6.2",
     "@vitejs/plugin-react": "^1.0.0",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.3.0",
@@ -38,5 +45,17 @@
     "vite": "^2.6.4",
     "vite-plugin-html": "^2.1.1",
     "vite-tsconfig-paths": "^3.3.17"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
